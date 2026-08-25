@@ -1,0 +1,33 @@
+name: Correção — AP1-02
+
+# Roda automaticamente quando um PR muda arquivos dentro de ap1-02/
+# (fluxo de entrega: aluno faz fork, edita o código, abre um PR de volta
+# para este repositório). Também pode ser rodado manualmente pela aba
+# "Actions" → "Correção — AP1-02" → "Run workflow" (workflow_dispatch),
+# sem depender de nenhum PR.
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "ap1-02/**"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  corrigir:
+    name: Corrigir AP1-02 (Questões 5 e 6)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar o código do Pull Request
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Rodar correção automática — AP1-02
+        run: node scripts/corrigir-ap1-02.mjs

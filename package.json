@@ -1,16 +1,16 @@
 {
-  "name": "ap1-01-exercicios",
+  "name": "estrutura-de-dados-praticas",
   "version": "1.0.0",
   "private": true,
-  "description": "Estrutura de Dados — UniFACTHUS — AP1-01 — Questões 5 e 6 (Arrays)",
+  "description": "Estrutura de Dados — UniFACTHUS — Práticas avaliativas (AP1-01, AP1-02, ...)",
   "scripts": {
-    "questao5": "ts-node questao5.ts",
-    "questao6": "ts-node questao6.ts",
-    "gabarito5": "ts-node questao5-gabarito.ts",
-    "gabarito6": "ts-node questao6-gabarito.ts"
+    "ap1-01:q5": "tsx ap1-01/questao5.ts",
+    "ap1-01:q6": "tsx ap1-01/questao6.ts",
+    "ap1-02:q5": "tsx ap1-02/questao5.ts",
+    "ap1-02:q6": "tsx ap1-02/questao6.ts"
   },
   "devDependencies": {
-    "ts-node": "^10.9.2",
+    "tsx": "^4.19.0",
     "typescript": "^5.5.4"
   }
 }
