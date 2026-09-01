@@ -7,7 +7,9 @@
     "ap1-01:q5": "tsx ap1-01/questao5.ts",
     "ap1-01:q6": "tsx ap1-01/questao6.ts",
     "ap1-02:q5": "tsx ap1-02/questao5.ts",
-    "ap1-02:q6": "tsx ap1-02/questao6.ts"
+    "ap1-02:q6": "tsx ap1-02/questao6.ts",
+    "ap1-03:q5": "tsx ap1-03/questao5.ts",
+    "ap1-03:q6": "tsx ap1-03/questao6.ts"
   },
   "devDependencies": {
     "tsx": "^4.19.0",

@@ -10,6 +10,7 @@ precisa editar os arquivos da prática que está fazendo naquele dia.
 | ------------------------------------------ | ------------------------------------------------------------ |
 | `ap1-01/questao5.ts`, `ap1-01/questao6.ts` | Exercícios da **AP1-01** (Arrays)                            |
 | `ap1-02/questao5.ts`, `ap1-02/questao6.ts` | Exercícios da **AP1-02** (Busca Binária e Listas Ligadas)    |
+| `ap1-03/questao5.ts`, `ap1-03/questao6.ts` | Exercícios da **AP1-03** (Listas Ligadas — inserir no fim e buscar) |
 | `package.json` / `tsconfig.json`           | Configuração do projeto (opcional — veja Opção B abaixo)     |
 | `scripts/`, `.github/`                     | Usados pela correção automática. **Não precisa mexer aqui.** |
 
