@@ -19,16 +19,24 @@ function inserirNoFinal<T>(head: No<T> | null, valor: T): No<T> {
   // TODO: caso contrário, percorra a lista até o último nó (proximo === null)
   //       e faça o "proximo" dele apontar para o novo nó
   // TODO: retorne o head original da lista
-const novo: No<T> = {
-  valor: valor,
-  proximo: null;
-}
-let atual = head;
+  const novo: No<T> = {
+    valor: valor,
+    proximo: null
+  };
 
-while (atual.proximo !== null) [
-  atual = atual.proximo;
-]
-atual.proximo = novo;
+  if (head === null) {
+    return novo;
+  }
+
+  let atual = head;
+
+  while (atual.proximo !== null) {
+    atual = atual.proximo;
+  }
+
+  atual.proximo = novo;
+
+  return head;
 }
 
 // ---------------------------------------------------------------
