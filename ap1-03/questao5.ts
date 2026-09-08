@@ -15,13 +15,20 @@ interface No<T> {
 
 function inserirNoFinal<T>(head: No<T> | null, valor: T): No<T> {
   // TODO: crie o novo nó, com "proximo" apontando para null
-
   // TODO: se a lista estiver vazia (head === null), retorne o novo nó como head
-
   // TODO: caso contrário, percorra a lista até o último nó (proximo === null)
   //       e faça o "proximo" dele apontar para o novo nó
-
   // TODO: retorne o head original da lista
+const novo: No<T> = {
+  valor: valor,
+  proximo: null;
+}
+let atual = head;
+
+while (atual.proximo !== null) [
+  atual = atual.proximo;
+]
+atual.proximo = novo;
 }
 
 // ---------------------------------------------------------------
